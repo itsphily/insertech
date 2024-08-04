@@ -592,3 +592,17 @@ const openURLInIframe = (url) => {
   iframe.src = url;
 }
 
+// Function to intercept and handle link clicks
+const handleLinkClicks = () => {
+  document.addEventListener('click', (event) => {
+    if (event.target.tagName === 'A' && event.target.href) {
+      event.preventDefault();
+      openURLInIframe(event.target.href);
+    }
+  });
+}
+
+// Call the function to handle link clicks
+handleLinkClicks();
+
+

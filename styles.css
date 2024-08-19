@@ -62,8 +62,13 @@ footer button.vfrc-button--primary[label=Cancel]::after {
 
 .vfrc-widget--chat {
   width: 600px; /* Adjust the width as needed */
+  height: 50%; /* Reduces the height by 50% of its original size */
+  /* or use a fixed pixel value if you know the original height, e.g., height: 200px; */
 }
+
 .vfrc-system-response--list .vfrc-message--chat {
-max-width: 460px; /* Adjust the max-width as needed */
-width: 400px; /* Adjust the width as needed */
+  max-width: 460px; /* Adjust the max-width as needed */
+  width: 400px; /* Adjust the width as needed */
+  height: 50%; /* Reduces the height by 50% of its original size */
+  /* or use a fixed pixel value if you know the original height, e.g., height: 100px; */
 }

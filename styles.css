@@ -59,3 +59,7 @@ footer button.vfrc-button--primary[label=Cancel]::after {
   content: "Annuler";
   color: rgba(0, 0, 0, 0.9);
 }
+
+.vfrc-widget--chat {
+  height: 60%; /* Set the height to 60% of the original size */
+}

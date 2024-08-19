@@ -61,5 +61,5 @@ footer button.vfrc-button--primary[label=Cancel]::after {
 }
 
 .vfrc-widget--chat {
-  height: 60%; /* Set the height to 60% of the original size */
+  height: 75%; /* Set the height to 60% of the original size */
 }

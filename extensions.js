@@ -561,7 +561,7 @@ export const FeedbackExtension = {
 
 export const URLExtension = {
   name: 'OpenURL',
-  type: 'response',
+  type: 'effect',
   match: ({ trace }) =>
     trace.type === 'ext_open_url' || trace.payload.name === 'ext_open_url',
   effect: ({ trace }) => {

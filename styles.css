@@ -63,3 +63,18 @@ footer button.vfrc-button--primary[label=Cancel]::after {
 .vfrc-widget--chat {
   height: 60%; /* Set the height to 60% of the original size */
 }
+
+/* Highlighted button — currently "Campagne de la rentrée".
+   Flow buttons carry no per-button identifier (every one has the exact same
+   class list and no label attribute), so the only available hook is position.
+   IMPORTANT: this styles the LAST button of every choice group. Keep the
+   promoted button last in its list in Voiceflow, and remember that any other
+   step showing buttons will have its last button highlighted too. */
+.vfrc-system-response--actions .vfrc-button:last-child {
+  background-color: #f1e7fe;
+  border: 2px solid #7e2bea;
+  color: #7e2bea;
+}
+.vfrc-system-response--actions .vfrc-button:last-child:hover {
+  background-color: #e7d6fd;
+}
